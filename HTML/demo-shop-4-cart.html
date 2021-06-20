@@ -148,10 +148,12 @@
 									</div>
 
 									<div class="cart-dropdown">
+										<img alt="Porto" width="20" height="20" src="./img/cart.svg"
+											style="margin-bottom: 2rem;">
 										<a href="#" class="cart-dropdown-icon">
-											<i class="minicart-icon"></i>
+
 											<span class="cart-info">
-												<span class="cart-qty">2</span>
+												<span class="cart-qty" style="color: red">2</span>
 												<span class="cart-text">item(s)</span>
 											</span>
 										</a>
@@ -601,7 +603,7 @@
 															4</a></li>
 												</ul>
 											</li>
-											<li><a href="demo-shop-4-cart.html"> Cửa hàngping Cart</a></li>
+											<li><a href="demo-shop-4-cart.html"> Danh sách giỏ hàng</a></li>
 											<li><a href="demo-shop-4-checkout.html"> Thanh toán</a></li>
 											<li><a href="demo-shop-4-about-us.html"> Về chúng tôi</a></li>
 											<li class="dropdown-submenu">
@@ -799,7 +801,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="demo-shop-4-cart.html"> Cửa hàngping Cart</a>
+								<a href="demo-shop-4-cart.html"> Danh sách giỏ hàng</a>
 							</li>
 							<li>
 								<a href="demo-shop-4-checkout.html"> Thanh toán</a>
@@ -857,8 +859,8 @@
 			<div class="cart">
 				<div class="container">
 					<h1 class="h2 heading-primary mt-lg clearfix">
-						<span> Cửa hàngping Cart</span>
-						<a href="#" class="btn btn-primary pull-right">Proceed to Checkout</a>
+						<span> Danh sách giỏ hàng</span>
+						<a href="#" class="btn btn-primary pull-right"> Tiến hành thanh toán</a>
 					</h1>
 
 					<div class="row">
@@ -869,10 +871,10 @@
 										<tr>
 											<th></th>
 											<th></th>
-											<th>Product Name</th>
-											<th>Unit Price</th>
-											<th>Qty</th>
-											<th>Subtotal</th>
+											<th>Tên sản phẩm</th>
+											<th>Giá</th>
+											<th>Số lượng</th>
+											<th>Giá tạm tính</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -883,7 +885,7 @@
 											</td>
 											<td class="product-image-td">
 												<a href="#" title="Product Name">
-													<img src="./img/demos/shop/products/cart-product1.jpg"
+													<img src="https://salt.tikicdn.com/cache/280x280/ts/product/b0/39/57/a5c7b46a18cd2e077fb2d805ed600e67.jpg"
 														alt="Product Name">
 												</a>
 											</td>
@@ -912,7 +914,7 @@
 											</td>
 											<td class="product-image-td">
 												<a href="#" title="Product Name">
-													<img src="./img/demos/shop/products/cart-product2.jpg"
+													<img src="https://salt.tikicdn.com/cache/280x280/ts/product/b0/39/57/a5c7b46a18cd2e077fb2d805ed600e67.jpg"
 														alt="Product Name">
 												</a>
 											</td>
@@ -937,12 +939,12 @@
 									<tfoot>
 										<tr>
 											<td colspan="6" class="clearfix">
-												<button class="btn btn-default hover-primary btn-continue">Continue
-													Shopping</button>
-												<button class="btn btn-default hover-primary btn-update">Update Shopping
-													Cart</button>
-												<button class="btn btn-default hover-primary btn-clear">Clear Shopping
-													Cart</button>
+												<button class="btn btn-default hover-primary btn-continue"> Tiếp tục mua
+													sắm</button>
+												<button class="btn btn-default hover-primary btn-update"> Cập nhật giỏ
+													hàng</button>
+												<button class="btn btn-default hover-primary btn-clear">Xóa giỏ
+													hàng</button>
 											</td>
 										</tr>
 									</tfoot>
@@ -1018,8 +1020,7 @@
 									<div class="panel-heading">
 										<h4 class="panel-title">
 											<a class="accordion-toggle" data-toggle="collapse" href="#panel-cart-total">
-												Cart Totals
-											</a>
+												Tổng giỏ hàng </a>
 										</h4>
 									</div>
 									<div id="panel-cart-total" class="accordion-body collapse in">
@@ -1027,17 +1028,17 @@
 											<table class="totals-table">
 												<tbody>
 													<tr>
-														<td>Subtotal</td>
+														<td>Giá tạm tính</td>
 														<td>$159.00</td>
 													</tr>
 													<tr>
-														<td>Grand Total</td>
+														<td>Giá thanh toán</td>
 														<td>$159.00</td>
 													</tr>
 												</tbody>
 											</table>
 											<div class="totals-table-action">
-												<a href="#" class="btn btn-primary btn-block">Proceed to Checkout</a>
+												<a href="#" class="btn btn-primary btn-block"> Tiến hành thanh toán</a>
 												<a href="#" class="btn btn-link btn-block"> Thanh toán with Multiple
 													Addresses</a>
 											</div>
@@ -1049,14 +1050,16 @@
 					</div>
 
 					<div class="crosssell-products">
-						<h2 class="h4"><strong>Based on your selection, you may be interested in the following
-								items:</strong></h2>
+						<h2 class="h4"><strong>
+								Dựa trên lựa chọn của bạn, bạn có thể quan tâm đến những điều sau
+								mặt hàng:</strong></h2>
 						<div class="row">
 							<div class="col-sm-6 col-md-3">
 								<div class="product product-sm">
 									<figure class="product-image-area">
 										<a href="#" title="Product Name" class="product-image">
-											<img src="./img/demos/shop/products/cart-product3.jpg" alt="Product Name">
+											<img src="https://salt.tikicdn.com/cache/280x280/ts/product/b0/39/57/a5c7b46a18cd2e077fb2d805ed600e67.jpg"
+												alt="Product Name">
 										</a>
 									</figure>
 									<div class="product-details-area">
@@ -1075,7 +1078,8 @@
 								<div class="product product-sm">
 									<figure class="product-image-area">
 										<a href="#" title="Product Name" class="product-image">
-											<img src="./img/demos/shop/products/cart-product4.jpg" alt="Product Name">
+											<img src="https://salt.tikicdn.com/cache/280x280/ts/product/b0/39/57/a5c7b46a18cd2e077fb2d805ed600e67.jpg"
+												alt="Product Name">
 										</a>
 									</figure>
 									<div class="product-details-area">
@@ -1096,7 +1100,8 @@
 								<div class="product product-sm">
 									<figure class="product-image-area">
 										<a href="#" title="Product Name" class="product-image">
-											<img src="./img/demos/shop/products/cart-product1.jpg" alt="Product Name">
+											<img src="https://salt.tikicdn.com/cache/280x280/ts/product/b0/39/57/a5c7b46a18cd2e077fb2d805ed600e67.jpg"
+												alt="Product Name">
 										</a>
 									</figure>
 									<div class="product-details-area">
@@ -1116,7 +1121,8 @@
 								<div class="product product-sm">
 									<figure class="product-image-area">
 										<a href="#" title="Product Name" class="product-image">
-											<img src="./img/demos/shop/products/cart-product2.jpg" alt="Product Name">
+											<img src="https://salt.tikicdn.com/cache/280x280/ts/product/b0/39/57/a5c7b46a18cd2e077fb2d805ed600e67.jpg"
+												alt="Product Name">
 										</a>
 									</figure>
 									<div class="product-details-area">
