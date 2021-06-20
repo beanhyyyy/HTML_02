@@ -408,7 +408,7 @@
       6: [
         function (a, b, c) {
           b.exports = function (b, c) {
-            var d = a("../less/environment/abstract-file-manager.js"),
+            var d = a("./less/environment/abstract-file-manager.js"),
               e = {},
               f = function () {};
             return (
@@ -496,7 +496,7 @@
             );
           };
         },
-        { "../less/environment/abstract-file-manager.js": 16 },
+        { "./less/environment/abstract-file-manager.js": 16 },
       ],
       7: [
         function (a, b, c) {
@@ -626,7 +626,7 @@
                 }, c.poll));
             }
             var l = b.document,
-              m = a("../less")();
+              m = a("./less")();
             m.options = c;
             var n = m.environment,
               o = a("./file-manager")(c, m.logger),
@@ -733,7 +733,7 @@
           };
         },
         {
-          "../less": 33,
+          "./less": 33,
           "./browser": 3,
           "./cache": 4,
           "./error-reporting": 5,
@@ -782,7 +782,7 @@
       ],
       10: [
         function (a, b, c) {
-          var d = a("../less/environment/abstract-plugin-loader.js"),
+          var d = a("./less/environment/abstract-plugin-loader.js"),
             e = function (b) {
               (this.less = b), (this.require = a);
             };
@@ -819,7 +819,7 @@
             }),
             (b.exports = e);
         },
-        { "../less/environment/abstract-plugin-loader.js": 17 },
+        { "./less/environment/abstract-plugin-loader.js": 17 },
       ],
       11: [
         function (a, b, c) {
@@ -1171,7 +1171,7 @@
                 c < f.length - 1;
                 c++
               )
-                i += "../";
+                i += "./";
               for (c = 0; c < e.length - 1; c++) i += e[c] + "/";
               return i;
             }),
@@ -1219,8 +1219,8 @@
           function d(a, b) {
             throw new f({ type: b || "Syntax", message: a });
           }
-          var e = a("../functions/function-registry"),
-            f = a("../less-error"),
+          var e = a("./functions/function-registry"),
+            f = a("./less-error"),
             g = function () {};
           (g.prototype.evalPlugin = function (a, b, c, d) {
             var f, g, h, i, j, k, l;
@@ -1335,11 +1335,11 @@
             }),
             (b.exports = g);
         },
-        { "../functions/function-registry": 24, "../less-error": 34 },
+        { "./functions/function-registry": 24, "./less-error": 34 },
       ],
       18: [
         function (a, b, c) {
-          var d = a("../logger"),
+          var d = a("./logger"),
             e = function (a, b) {
               (this.fileManagers = b || []), (a = a || {});
               for (
@@ -1391,7 +1391,7 @@
             }),
             (b.exports = e);
         },
-        { "../logger": 35 },
+        { "./logger": 35 },
       ],
       19: [
         function (a, b, c) {
@@ -1412,7 +1412,7 @@
                 (k[l] = 255 * h);
             return new e(k, g);
           }
-          var e = a("../tree/color"),
+          var e = a("./tree/color"),
             f = a("./function-registry"),
             g = {
               multiply: function (a, b) {
@@ -1454,7 +1454,7 @@
           for (var h in g) g.hasOwnProperty(h) && (d[h] = d.bind(null, g[h]));
           f.addMultiple(d);
         },
-        { "../tree/color": 52, "./function-registry": 24 },
+        { "./tree/color": 52, "./function-registry": 24 },
       ],
       20: [
         function (a, b, c) {
@@ -1479,10 +1479,10 @@
               : f(a);
           }
           var h,
-            i = a("../tree/dimension"),
-            j = a("../tree/color"),
-            k = a("../tree/quoted"),
-            l = a("../tree/anonymous"),
+            i = a("./tree/dimension"),
+            j = a("./tree/color"),
+            k = a("./tree/quoted"),
+            l = a("./tree/anonymous"),
             m = a("./function-registry");
           (h = {
             rgb: function (a, b, c) {
@@ -1724,23 +1724,23 @@
             m.addMultiple(h);
         },
         {
-          "../tree/anonymous": 47,
-          "../tree/color": 52,
-          "../tree/dimension": 59,
-          "../tree/quoted": 77,
+          "./tree/anonymous": 47,
+          "./tree/color": 52,
+          "./tree/dimension": 59,
+          "./tree/quoted": 77,
           "./function-registry": 24,
         },
       ],
       21: [
         function (a, b, c) {
           b.exports = function (b) {
-            var c = a("../tree/quoted"),
-              d = a("../tree/url"),
+            var c = a("./tree/quoted"),
+              d = a("./tree/url"),
               e = a("./function-registry"),
               f = function (a, b) {
                 return new d(b, a.index, a.currentFileInfo).eval(a.context);
               },
-              g = a("../logger");
+              g = a("./logger");
             e.add("data-uri", function (a, e) {
               e || ((e = a), (a = null));
               var h = a && a.value,
@@ -1803,15 +1803,15 @@
           };
         },
         {
-          "../logger": 35,
-          "../tree/quoted": 77,
-          "../tree/url": 84,
+          "./logger": 35,
+          "./tree/quoted": 77,
+          "./tree/url": 84,
           "./function-registry": 24,
         },
       ],
       22: [
         function (a, b, c) {
-          var d = a("../tree/keyword"),
+          var d = a("./tree/keyword"),
             e = a("./function-registry"),
             f = {
               eval: function () {
@@ -1832,11 +1832,11 @@
             };
           e.add("default", f.eval.bind(f)), (b.exports = f);
         },
-        { "../tree/keyword": 68, "./function-registry": 24 },
+        { "./tree/keyword": 68, "./function-registry": 24 },
       ],
       23: [
         function (a, b, c) {
-          var d = a("../tree/expression"),
+          var d = a("./tree/expression"),
             e = function (a, b, c, d) {
               (this.name = a.toLowerCase()),
                 (this.index = c),
@@ -1868,7 +1868,7 @@
             }),
             (b.exports = e);
         },
-        { "../tree/expression": 62 },
+        { "./tree/expression": 62 },
       ],
       24: [
         function (a, b, c) {
@@ -1942,7 +1942,7 @@
       ],
       26: [
         function (a, b, c) {
-          var d = a("../tree/dimension"),
+          var d = a("./tree/dimension"),
             e = function () {};
           (e._math = function (a, b, c) {
             if (!(c instanceof d))
@@ -1954,7 +1954,7 @@
           }),
             (b.exports = e);
         },
-        { "../tree/dimension": 59 },
+        { "./tree/dimension": 59 },
       ],
       27: [
         function (a, b, c) {
@@ -1990,8 +1990,8 @@
       ],
       28: [
         function (a, b, c) {
-          var d = a("../tree/dimension"),
-            e = a("../tree/anonymous"),
+          var d = a("./tree/dimension"),
+            e = a("./tree/anonymous"),
             f = a("./function-registry"),
             g = a("./math-helper.js"),
             h = function (a, b) {
@@ -2098,17 +2098,17 @@
           });
         },
         {
-          "../tree/anonymous": 47,
-          "../tree/dimension": 59,
+          "./tree/anonymous": 47,
+          "./tree/dimension": 59,
           "./function-registry": 24,
           "./math-helper.js": 26,
         },
       ],
       29: [
         function (a, b, c) {
-          var d = a("../tree/quoted"),
-            e = a("../tree/anonymous"),
-            f = a("../tree/javascript"),
+          var d = a("./tree/quoted"),
+            e = a("./tree/anonymous"),
+            f = a("./tree/javascript"),
             g = a("./function-registry");
           g.addMultiple({
             e: function (a) {
@@ -2155,20 +2155,20 @@
           });
         },
         {
-          "../tree/anonymous": 47,
-          "../tree/javascript": 66,
-          "../tree/quoted": 77,
+          "./tree/anonymous": 47,
+          "./tree/javascript": 66,
+          "./tree/quoted": 77,
           "./function-registry": 24,
         },
       ],
       30: [
         function (a, b, c) {
           b.exports = function (b) {
-            var c = a("../tree/dimension"),
-              d = a("../tree/color"),
-              e = a("../tree/expression"),
-              f = a("../tree/quoted"),
-              g = a("../tree/url"),
+            var c = a("./tree/dimension"),
+              d = a("./tree/color"),
+              e = a("./tree/expression"),
+              f = a("./tree/quoted"),
+              g = a("./tree/url"),
               h = a("./function-registry");
             h.add("svg-gradient", function (a) {
               function b() {
@@ -2271,24 +2271,24 @@
           };
         },
         {
-          "../tree/color": 52,
-          "../tree/dimension": 59,
-          "../tree/expression": 62,
-          "../tree/quoted": 77,
-          "../tree/url": 84,
+          "./tree/color": 52,
+          "./tree/dimension": 59,
+          "./tree/expression": 62,
+          "./tree/quoted": 77,
+          "./tree/url": 84,
           "./function-registry": 24,
         },
       ],
       31: [
         function (a, b, c) {
-          var d = a("../tree/keyword"),
-            e = a("../tree/detached-ruleset"),
-            f = a("../tree/dimension"),
-            g = a("../tree/color"),
-            h = a("../tree/quoted"),
-            i = a("../tree/anonymous"),
-            j = a("../tree/url"),
-            k = a("../tree/operation"),
+          var d = a("./tree/keyword"),
+            e = a("./tree/detached-ruleset"),
+            f = a("./tree/dimension"),
+            g = a("./tree/color"),
+            h = a("./tree/quoted"),
+            i = a("./tree/anonymous"),
+            j = a("./tree/url"),
+            k = a("./tree/operation"),
             l = a("./function-registry"),
             m = function (a, b) {
               return a instanceof b ? d.True : d.False;
@@ -2368,14 +2368,14 @@
           });
         },
         {
-          "../tree/anonymous": 47,
-          "../tree/color": 52,
-          "../tree/detached-ruleset": 58,
-          "../tree/dimension": 59,
-          "../tree/keyword": 68,
-          "../tree/operation": 74,
-          "../tree/quoted": 77,
-          "../tree/url": 84,
+          "./tree/anonymous": 47,
+          "./tree/color": 52,
+          "./tree/detached-ruleset": 58,
+          "./tree/dimension": 59,
+          "./tree/keyword": 68,
+          "./tree/operation": 74,
+          "./tree/quoted": 77,
+          "./tree/url": 84,
           "./function-registry": 24,
         },
       ],
@@ -3008,11 +3008,11 @@
       ],
       40: [
         function (a, b, c) {
-          var d = a("../less-error"),
-            e = a("../tree"),
-            f = a("../visitors"),
+          var d = a("./less-error"),
+            e = a("./tree"),
+            f = a("./visitors"),
             g = a("./parser-input"),
-            h = a("../utils"),
+            h = a("./utils"),
             i = function j(a, b, c) {
               function i(a, e) {
                 throw new d(
@@ -4302,10 +4302,10 @@
             (b.exports = i);
         },
         {
-          "../less-error": 34,
-          "../tree": 65,
-          "../utils": 87,
-          "../visitors": 91,
+          "./less-error": 34,
+          "./tree": 65,
+          "./utils": 87,
+          "./visitors": 91,
           "./parser-input": 39,
         },
       ],
@@ -4922,7 +4922,7 @@
         function (a, b, c) {
           var d = a("./node"),
             e = a("./anonymous"),
-            f = a("../functions/function-caller"),
+            f = a("./functions/function-caller"),
             g = function (a, b, c, d) {
               (this.name = a),
                 (this.args = b),
@@ -4976,7 +4976,7 @@
             }),
             (b.exports = g);
         },
-        { "../functions/function-caller": 23, "./anonymous": 47, "./node": 73 },
+        { "./functions/function-caller": 23, "./anonymous": 47, "./node": 73 },
       ],
       52: [
         function (a, b, c) {
@@ -4997,7 +4997,7 @@
             );
           }
           var f = a("./node"),
-            g = a("../data/colors"),
+            g = a("./data/colors"),
             h = function (a, b, c) {
               (this.rgb = Array.isArray(a)
                 ? a
@@ -5154,7 +5154,7 @@
             }),
             (b.exports = h);
         },
-        { "../data/colors": 13, "./node": 73 },
+        { "./data/colors": 13, "./node": 73 },
       ],
       53: [
         function (a, b, c) {
@@ -5407,8 +5407,8 @@
       58: [
         function (a, b, c) {
           var d = a("./node"),
-            e = a("../contexts"),
-            f = a("../utils"),
+            e = a("./contexts"),
+            f = a("./utils"),
             g = function (a, b) {
               (this.ruleset = a),
                 (this.frames = b),
@@ -5431,12 +5431,12 @@
             }),
             (b.exports = g);
         },
-        { "../contexts": 12, "../utils": 87, "./node": 73 },
+        { "./contexts": 12, "./utils": 87, "./node": 73 },
       ],
       59: [
         function (a, b, c) {
           var d = a("./node"),
-            e = a("../data/unit-conversions"),
+            e = a("./data/unit-conversions"),
             f = a("./unit"),
             g = a("./color"),
             h = function (a, b) {
@@ -5566,7 +5566,7 @@
             (b.exports = h);
         },
         {
-          "../data/unit-conversions": 15,
+          "./data/unit-conversions": 15,
           "./color": 52,
           "./node": 73,
           "./unit": 83,
@@ -5772,7 +5772,7 @@
             g = a("./quoted"),
             h = a("./ruleset"),
             i = a("./anonymous"),
-            j = a("../utils"),
+            j = a("./utils"),
             k = function (a, b, c, d, e, f) {
               if (
                 ((this.options = c),
@@ -5908,7 +5908,7 @@
             (b.exports = k);
         },
         {
-          "../utils": 87,
+          "./utils": 87,
           "./anonymous": 47,
           "./media": 69,
           "./node": 73,
@@ -6137,7 +6137,7 @@
             g = a("./anonymous"),
             h = a("./expression"),
             i = a("./atrule"),
-            j = a("../utils"),
+            j = a("./utils"),
             k = function (a, b, c, g, h) {
               (this._index = c), (this._fileInfo = g);
               var i = new f(
@@ -6267,7 +6267,7 @@
             (b.exports = k);
         },
         {
-          "../utils": 87,
+          "./utils": 87,
           "./anonymous": 47,
           "./atrule": 49,
           "./expression": 62,
@@ -6281,7 +6281,7 @@
           var d = a("./node"),
             e = a("./selector"),
             f = a("./mixin-definition"),
-            g = a("../functions/default"),
+            g = a("./functions/default"),
             h = function (a, b, c, d, f) {
               (this.selector = new e(a)),
                 (this.arguments = b || []),
@@ -6457,7 +6457,7 @@
             (b.exports = h);
         },
         {
-          "../functions/default": 22,
+          "./functions/default": 22,
           "./mixin-definition": 71,
           "./node": 73,
           "./selector": 81,
@@ -6470,8 +6470,8 @@
             f = a("./ruleset"),
             g = a("./declaration"),
             h = a("./expression"),
-            i = a("../contexts"),
-            j = a("../utils"),
+            i = a("./contexts"),
+            j = a("./utils"),
             k = function (a, b, c, f, g, h, i) {
               (this.name = a),
                 (this.selectors = [
@@ -6673,8 +6673,8 @@
             (b.exports = k);
         },
         {
-          "../contexts": 12,
-          "../utils": 87,
+          "./contexts": 12,
+          "./utils": 87,
           "./declaration": 57,
           "./element": 61,
           "./expression": 62,
@@ -7080,12 +7080,12 @@
             i = a("./selector"),
             j = a("./element"),
             k = a("./anonymous"),
-            l = a("../contexts"),
-            m = a("../functions/function-registry"),
-            n = a("../functions/default"),
+            l = a("./contexts"),
+            m = a("./functions/function-registry"),
+            n = a("./functions/default"),
             o = a("./debug-info"),
-            p = a("../less-error"),
-            q = a("../utils"),
+            p = a("./less-error"),
+            q = a("./utils"),
             r = function (a, b, c, d) {
               (this.selectors = a),
                 (this.rules = b),
@@ -7574,11 +7574,11 @@
             (b.exports = r);
         },
         {
-          "../contexts": 12,
-          "../functions/default": 22,
-          "../functions/function-registry": 24,
-          "../less-error": 34,
-          "../utils": 87,
+          "./contexts": 12,
+          "./functions/default": 22,
+          "./functions/function-registry": 24,
+          "./less-error": 34,
+          "./utils": 87,
           "./anonymous": 47,
           "./comment": 54,
           "./debug-info": 56,
@@ -7716,8 +7716,8 @@
       83: [
         function (a, b, c) {
           var d = a("./node"),
-            e = a("../data/unit-conversions"),
-            f = a("../utils"),
+            e = a("./data/unit-conversions"),
+            f = a("./utils"),
             g = function (a, b, c) {
               (this.numerator = a ? f.copyArray(a).sort() : []),
                 (this.denominator = b ? f.copyArray(b).sort() : []),
@@ -7806,7 +7806,7 @@
             }),
             (b.exports = g);
         },
-        { "../data/unit-conversions": 15, "../utils": 87, "./node": 73 },
+        { "./data/unit-conversions": 15, "./utils": 87, "./node": 73 },
       ],
       84: [
         function (a, b, c) {
@@ -7970,10 +7970,10 @@
       ],
       88: [
         function (a, b, c) {
-          var d = a("../tree"),
+          var d = a("./tree"),
             e = a("./visitor"),
-            f = a("../logger"),
-            g = a("../utils"),
+            f = a("./logger"),
+            g = a("./utils"),
             h = function () {
               (this._visitor = new e(this)),
                 (this.contexts = []),
@@ -8340,7 +8340,7 @@
           }),
             (b.exports = i);
         },
-        { "../logger": 35, "../tree": 65, "../utils": 87, "./visitor": 95 },
+        { "./logger": 35, "./tree": 65, "./utils": 87, "./visitor": 95 },
       ],
       89: [
         function (a, b, c) {
@@ -8392,10 +8392,10 @@
       ],
       90: [
         function (a, b, c) {
-          var d = a("../contexts"),
+          var d = a("./contexts"),
             e = a("./visitor"),
             f = a("./import-sequencer"),
-            g = a("../utils"),
+            g = a("./utils"),
             h = function (a, b) {
               (this._visitor = new e(this)),
                 (this._importer = a),
@@ -8537,8 +8537,8 @@
             (b.exports = h);
         },
         {
-          "../contexts": 12,
-          "../utils": 87,
+          "./contexts": 12,
+          "./utils": 87,
           "./import-sequencer": 89,
           "./visitor": 95,
         },
@@ -8648,7 +8648,7 @@
       ],
       94: [
         function (a, b, c) {
-          var d = a("../tree"),
+          var d = a("./tree"),
             e = a("./visitor"),
             f = function (a) {
               (this._visitor = new e(this)), (this._context = a);
@@ -8901,7 +8901,7 @@
           }),
             (b.exports = g);
         },
-        { "../tree": 65, "./visitor": 95 },
+        { "./tree": 65, "./visitor": 95 },
       ],
       95: [
         function (a, b, c) {
@@ -8923,7 +8923,7 @@
                 }
             return b;
           }
-          var f = a("../tree"),
+          var f = a("./tree"),
             g = { visitDeeper: !0 },
             h = !1,
             i = function (a) {
@@ -8997,7 +8997,7 @@
           }),
             (b.exports = i);
         },
-        { "../tree": 65 },
+        { "./tree": 65 },
       ],
       96: [
         function (a, b, c) {

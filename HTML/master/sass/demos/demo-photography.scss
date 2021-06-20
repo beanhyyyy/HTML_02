@@ -1,5 +1,5 @@
 //COMMON IMPORTS
-@import "../config/imports";
+@import "./config/imports";
 
 //CONFIG
 $font-secondary: "Roboto Slab", serif;
@@ -8,4 +8,4 @@ $custom-font-size-1: 2em;
 $custom-font-size-2: 3.5em;
 
 //DEMO BASE
-@import "demo-photography-base"
+@import "demo-photography-base";
